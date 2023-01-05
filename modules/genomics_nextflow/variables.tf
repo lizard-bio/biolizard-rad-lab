@@ -28,7 +28,7 @@ variable "billing_budget_alert_spend_basis" {
 variable "billing_budget_alert_spent_percents" {
   description = "A list of percentages of the budget to alert on when threshold is exceeded. {{UIMeta group=0 order=7 updatesafe }}"
   type        = list(number)
-  default     = [0.5,0.7,1]
+  default     = [0.5, 0.7, 1]
 }
 
 variable "billing_budget_amount" {
@@ -132,7 +132,7 @@ variable "network_name" {
 variable "nextflow_api_location" {
   description = "Google Cloud region or multi-region where the Life Sciences API endpoint will be used. This does not affect where worker instances or data will be stored. {{UIMeta group=3 order=3 }}"
   type        = string
-  default     = "us-central1"
+  default     = "europe-west1"
 }
 
 variable "nextflow_sa_roles" {
@@ -166,7 +166,7 @@ variable "nextflow_server_instance_type" {
 variable "nextflow_zone" {
   description = "GCP Zone that will be set as the default runtime in nextflow config file. {{UIMeta group=3 order=4 }}"
   type        = string
-  default     = "us-central1-a"
+  default     = "europe-west1-b"
 }
 
 variable "organization_id" {
@@ -196,7 +196,7 @@ variable "project_id_prefix" {
 variable "region" {
   description = "The default region where the Compute Instance and VPCs will be deployed. {{UIMeta group=2 order=4 }}"
   type        = string
-  default     = "us-central1"
+  default     = "europe-west1"
 }
 
 variable "resource_creator_identity" {
@@ -244,5 +244,5 @@ variable "trusted_users" {
 variable "zone" {
   description = "The default zone where the Compute Instance be deployed. {{UIMeta group=2 order=5 }}"
   type        = string
-  default     = "us-central1-a"
+  default     = "europe-west1-b"
 }
